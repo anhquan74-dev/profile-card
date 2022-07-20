@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin: auto 20px;
+}
+
+.card_avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f2726a;
+    overflow: hidden;
+    margin: 25px auto 0;
+    transition: 0.3s;
+}
+
+.card_avatar:hover{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    transform: translateY(-25px);
+    border: none;
+}
+
+.card_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_name{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px
+}
+
+.card_job {
+    color: #f2726a;
+    font-size: 16px;
+}
+
+.card_social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 50px 45px;
+    font-size: 18px;
+
+}
+
+.card_social i:hover {
+    color: #f2726a;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card_button {
+    width: 122px;
+    height: 42px;
+    background-color: #242628;
+    border-radius: 10px;
+    border: 1px solid #f2726a;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card_button:hover {
+    background-color: #f2726a;
+}
